@@ -7,7 +7,7 @@ This portfolio showcases full-stack applications I have designed and developed u
 ## 🌐 Live Portfolio
 
 **View Portfolio:**  
-[Kevin Jordan — Full-Stack Developer Portfolio](YOUR_PORTFOLIO_URL)
+[Kevin Jordan — Full-Stack Developer Portfolio](https://kevin-jordan-portfolio-v2.vercel.app/)
 
 ---
 
