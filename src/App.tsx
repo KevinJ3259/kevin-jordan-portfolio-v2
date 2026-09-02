@@ -89,9 +89,10 @@ function App() {
             </p>
 
             <p>
-              My recent work includes an AI-powered career management platform
-              and a full-stack vehicle maintenance dashboard. I enjoy turning
-              real-world problems into useful, reliable software.
+              My recent work includes FinSight AI, an AI-powered career
+              management platform, and a full-stack vehicle maintenance
+              dashboard. I enjoy turning real-world problems into useful,
+              reliable software.
             </p>
           </div>
         </section>
@@ -119,6 +120,8 @@ function App() {
             <div className="skill-card">
               <h3>Backend</h3>
               <div className="skill-list">
+                <span>Python</span>
+                <span>FastAPI</span>
                 <span>Node.js</span>
                 <span>Express</span>
                 <span>REST APIs</span>
@@ -131,6 +134,7 @@ function App() {
               <h3>Database</h3>
               <div className="skill-list">
                 <span>PostgreSQL</span>
+                <span>SQLAlchemy</span>
                 <span>Prisma ORM</span>
                 <span>SQL</span>
                 <span>Database Design</span>
@@ -212,7 +216,7 @@ function App() {
                   </a>
 
                   <a
-                    href="https://github.com/KevinJ3259"
+                    href="https://github.com/KevinJ3259/careertrack-ai"
                     target="_blank"
                     rel="noreferrer"
                     className="secondary-button"
