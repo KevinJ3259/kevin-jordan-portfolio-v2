@@ -287,6 +287,73 @@ function App() {
                 </div>
               </div>
             </article>
+
+            {/* FINSIGHT AI */}
+            <article className="project-card">
+              <div className="project-number">03</div>
+
+              <div className="project-content">
+                <p className="project-type">
+                  AI / FULL-STACK FINANCE APPLICATION
+                </p>
+
+                <h3>FinSight AI</h3>
+
+                <img
+                  src="/project-images/finsight-ai.png"
+                  alt="FinSight AI personal finance dashboard"
+                  className="project-image"
+                />
+
+                <p className="project-description">
+                  Secure AI-powered personal finance application for tracking
+                  income and expenses, planning recurring cash flow, managing
+                  budgets and savings goals, and generating personalized
+                  financial insights.
+                </p>
+
+                <div className="project-features">
+                  <span>Secure User Authentication</span>
+                  <span>Income & Expense Tracking</span>
+                  <span>Cash-Flow Forecasting</span>
+                  <span>Budget Management</span>
+                  <span>Savings Goals</span>
+                  <span>AI Financial Insights</span>
+                </div>
+
+                <div className="tech-stack">
+                  <span>Python</span>
+                  <span>FastAPI</span>
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>PostgreSQL</span>
+                  <span>SQLAlchemy</span>
+                  <span>JWT</span>
+                  <span>OpenAI API</span>
+                  <span>Render</span>
+                </div>
+
+                <div className="project-buttons">
+                  <a
+                    href="https://finsight-ai-0961.onrender.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="primary-button"
+                  >
+                    Live Demo
+                  </a>
+
+                  <a
+                    href="https://github.com/KevinJ3259/finsight-ai"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="secondary-button"
+                  >
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </article>
           </div>
         </section>
 
