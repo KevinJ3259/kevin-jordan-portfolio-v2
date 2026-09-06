@@ -89,10 +89,10 @@ function App() {
             </p>
 
             <p>
-              My recent work includes FinSight AI, an AI-powered career
-              management platform, and a full-stack vehicle maintenance
-              dashboard. I enjoy turning real-world problems into useful,
-              reliable software.
+              My recent work includes FinSight AI, an AI-powered personal
+              finance application, a full-stack vehicle maintenance dashboard,
+              and Family Legacy Calendar. I enjoy turning real-world problems
+              into useful, reliable software.
             </p>
           </div>
         </section>
@@ -349,6 +349,72 @@ function App() {
 
                   <a
                     href="https://github.com/KevinJ3259/finsight-ai"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="secondary-button"
+                  >
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            {/* FAMILY LEGACY CALENDAR */}
+            <article className="project-card">
+              <div className="project-number">04</div>
+
+              <div className="project-content">
+                <p className="project-type">
+                  FULL-STACK FAMILY MEMORY APPLICATION
+                </p>
+
+                <h3>Family Legacy Calendar</h3>
+
+                <img
+                  src="/project-images/family-legacy-calendar.png"
+                  alt="Family Legacy Calendar"
+                  className="project-image"
+                />
+
+                <p className="project-description">
+                  Full-stack family calendar application for preserving
+                  birthdays, events, and monthly photo memories with secure
+                  user accounts, automatic photo collages, and persistent
+                  cloud storage.
+                </p>
+
+                <div className="project-features">
+                  <span>Secure User Authentication</span>
+                  <span>100-Year Calendar</span>
+                  <span>Birthdays & Family Events</span>
+                  <span>Monthly Photo Memories</span>
+                  <span>Automatic Photo Collages</span>
+                  <span>Persistent Photo Storage</span>
+                </div>
+
+                <div className="tech-stack">
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>Python</span>
+                  <span>FastAPI</span>
+                  <span>PostgreSQL</span>
+                  <span>SQLAlchemy</span>
+                  <span>JWT</span>
+                  <span>Render</span>
+                </div>
+
+                <div className="project-buttons">
+                  <a
+                    href="https://family-legacy-calendar-frontend.onrender.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="primary-button"
+                  >
+                    Live Demo
+                  </a>
+
+                  <a
+                    href="https://github.com/KevinJ3259/family-legacy-calendar"
                     target="_blank"
                     rel="noreferrer"
                     className="secondary-button"
