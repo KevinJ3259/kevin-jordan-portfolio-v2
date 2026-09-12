@@ -534,19 +534,21 @@ function App() {
 
     <div className="experience-card">
       <p className="experience-type">EDUCATION</p>
-
       <h3>Bachelor of Science — Information Technology</h3>
       <h4>Software Engineering</h4>
-
       <p>University of Phoenix — 2020</p>
     </div>
 
     <div className="experience-card">
-      <p className="experience-type">TECHNICAL TRAINING</p>
+      <p className="experience-type">EDUCATION</p>
+      <h3>Associate of Arts — Foundations of Business</h3>
+      <p>University of Phoenix — 2010</p>
+    </div>
 
+    <div className="experience-card">
+      <p className="experience-type">TECHNICAL TRAINING</p>
       <h3>Full-Stack Web Development Bootcamp</h3>
       <h4>React • Node.js • Express • Databases • APIs</h4>
-
       <p>University of Kansas — 2022</p>
     </div>
   </div>
