@@ -36,9 +36,9 @@ function App() {
             </h2>
 
             <p className="hero-description">
-              React and TypeScript developer with experience building
-              production-ready applications using Node.js, Express, PostgreSQL,
-              Prisma, REST APIs, and AI integrations.
+              Full-stack developer with experience building production-ready
+              applications using Java, Spring Boot, React, TypeScript, Python,
+              PostgreSQL, REST APIs, authentication, and cloud deployment.
             </p>
 
             <div className="hero-buttons">
@@ -120,6 +120,9 @@ function App() {
             <div className="skill-card">
               <h3>Backend</h3>
               <div className="skill-list">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>Spring Security</span>
                 <span>Python</span>
                 <span>FastAPI</span>
                 <span>Node.js</span>
@@ -424,6 +427,74 @@ function App() {
                 </div>
               </div>
             </article>
+            {/* INVENTORYPRO */}
+<article className="project-card">
+  <div className="project-number">05</div>
+
+  <div className="project-content">
+    <p className="project-type">
+      JAVA / FULL-STACK INVENTORY APPLICATION
+    </p>
+
+    <h3>InventoryPro</h3>
+
+    <img
+      src="/project-images/inventorypro.png"
+      alt="InventoryPro inventory and order management dashboard"
+      className="project-image"
+    />
+
+    <p className="project-description">
+      Full-stack inventory and order management system for managing products,
+      customers, orders, stock levels, reorder alerts, and business reporting
+      through a secure authenticated dashboard.
+    </p>
+
+    <div className="project-features">
+      <span>JWT Authentication</span>
+      <span>Product & Customer Management</span>
+      <span>Order Management</span>
+      <span>Automatic Inventory Updates</span>
+      <span>Reorder Alerts</span>
+      <span>Sales Reporting</span>
+      <span>Database Analytics</span>
+    </div>
+
+    <div className="tech-stack">
+      <span>Java 21</span>
+      <span>Spring Boot</span>
+      <span>Spring Security</span>
+      <span>React</span>
+      <span>TypeScript</span>
+      <span>PostgreSQL</span>
+      <span>Spring Data JPA</span>
+      <span>Hibernate</span>
+      <span>JWT</span>
+      <span>Render</span>
+      <span>Neon</span>
+    </div>
+
+    <div className="project-buttons">
+      <a
+        href="https://inventory-order-management-1-z7kr.onrender.com"
+        target="_blank"
+        rel="noreferrer"
+        className="primary-button"
+      >
+        Live Demo
+      </a>
+
+      <a
+        href="https://github.com/KevinJ3259/inventory-order-management"
+        target="_blank"
+        rel="noreferrer"
+        className="secondary-button"
+      >
+        View Code
+      </a>
+    </div>
+  </div>
+</article>
           </div>
         </section>
 

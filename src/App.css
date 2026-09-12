@@ -763,3 +763,18 @@ img {
     height: 190px;
   }
 }
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.tech-stack span {
+  padding: 7px 12px;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
