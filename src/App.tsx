@@ -160,343 +160,251 @@ function App() {
         </section>
 
         {/* ================= PROJECTS ================= */}
-        <section id="projects" className="section projects-section">
-          <div className="section-heading">
-            <p className="section-label">FEATURED PROJECTS</p>
-            <h2>Applications I've built and deployed.</h2>
-          </div>
-
-          <div className="projects-grid">
-            {/* CAREERTRACK AI */}
-            <article className="project-card">
-              <div className="project-number">01</div>
-
-              <div className="project-content">
-                <p className="project-type">
-                  AI / FULL-STACK APPLICATION
-                </p>
-
-                <h3>CareerTrack AI</h3>
-
-                <img
-                  src="/project-images/careertrack-ai.png"
-                  alt="CareerTrack AI dashboard"
-                  className="project-image"
-                />
-
-                <p className="project-description">
-                  AI-powered career management platform for organizing job
-                  applications, tracking interviews, analyzing resumes, and
-                  generating tailored cover letters.
-                </p>
-
-                <div className="project-features">
-                  <span>Job Application Tracking</span>
-                  <span>AI Resume Analysis</span>
-                  <span>AI Cover Letters</span>
-                  <span>Interview Tracking</span>
-                  <span>Dashboard Analytics</span>
-                </div>
-
-                <div className="tech-stack">
-                  <span>React</span>
-                  <span>TypeScript</span>
-                  <span>Node.js</span>
-                  <span>Express</span>
-                  <span>PostgreSQL</span>
-                  <span>Prisma</span>
-                  <span>OpenAI API</span>
-                </div>
-
-                <div className="project-buttons">
-                  <a
-                    href="https://careertrack-ai-sigma.vercel.app"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="primary-button"
-                  >
-                    Live Demo
-                  </a>
-
-                  <a
-                    href="https://github.com/KevinJ3259/careertrack-ai"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="secondary-button"
-                  >
-                    View Code
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            {/* VEHICLE MAINTENANCE DASHBOARD */}
-            <article className="project-card">
-              <div className="project-number">02</div>
-
-              <div className="project-content">
-                <p className="project-type">
-                  FULL-STACK WEB APPLICATION
-                </p>
-
-                <h3>Vehicle Maintenance Dashboard</h3>
-
-                <img
-                  src="/project-images/vehicle-maintenance.png"
-                  alt="Vehicle Maintenance Dashboard"
-                  className="project-image"
-                />
-
-                <p className="project-description">
-                  Full-stack vehicle maintenance and fuel tracking application
-                  that helps users manage service history, maintenance
-                  reminders, fuel expenses, MPG, and vehicle ownership costs.
-                </p>
-
-                <div className="project-features">
-                  <span>Vehicle Management</span>
-                  <span>Maintenance Tracking</span>
-                  <span>Service Reminders</span>
-                  <span>Fuel Tracking</span>
-                  <span>MPG Analytics</span>
-                  <span>Ownership Costs</span>
-                </div>
-
-                <div className="tech-stack">
-                  <span>React</span>
-                  <span>TypeScript</span>
-                  <span>Node.js</span>
-                  <span>Express</span>
-                  <span>PostgreSQL</span>
-                  <span>Prisma</span>
-                  <span>Neon</span>
-                  <span>Render</span>
-                </div>
-
-                <div className="project-buttons">
-                  <a
-                    href="https://vehicle-maintenance-app-frontend.onrender.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="primary-button"
-                  >
-                    Live Demo
-                  </a>
-
-                  <a
-                    href="https://github.com/KevinJ3259/vehicle-maintenance-app"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="secondary-button"
-                  >
-                    View Code
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            {/* FINSIGHT AI */}
-            <article className="project-card">
-              <div className="project-number">03</div>
-
-              <div className="project-content">
-                <p className="project-type">
-                  AI / FULL-STACK FINANCE APPLICATION
-                </p>
-
-                <h3>FinSight AI</h3>
-
-                <img
-                  src="/project-images/finsight-ai.png"
-                  alt="FinSight AI personal finance dashboard"
-                  className="project-image"
-                />
-
-                <p className="project-description">
-                  Secure AI-powered personal finance application for tracking
-                  income and expenses, planning recurring cash flow, managing
-                  budgets and savings goals, and generating personalized
-                  financial insights.
-                </p>
-
-                <div className="project-features">
-                  <span>Secure User Authentication</span>
-                  <span>Income & Expense Tracking</span>
-                  <span>Cash-Flow Forecasting</span>
-                  <span>Budget Management</span>
-                  <span>Savings Goals</span>
-                  <span>AI Financial Insights</span>
-                </div>
-
-                <div className="tech-stack">
-                  <span>Python</span>
-                  <span>FastAPI</span>
-                  <span>React</span>
-                  <span>TypeScript</span>
-                  <span>PostgreSQL</span>
-                  <span>SQLAlchemy</span>
-                  <span>JWT</span>
-                  <span>OpenAI API</span>
-                  <span>Render</span>
-                </div>
-
-                <div className="project-buttons">
-                  <a
-                    href="https://finsight-ai-0961.onrender.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="primary-button"
-                  >
-                    Live Demo
-                  </a>
-
-                  <a
-                    href="https://github.com/KevinJ3259/finsight-ai"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="secondary-button"
-                  >
-                    View Code
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            {/* FAMILY LEGACY CALENDAR */}
-            <article className="project-card">
-              <div className="project-number">04</div>
-
-              <div className="project-content">
-                <p className="project-type">
-                  FULL-STACK FAMILY MEMORY APPLICATION
-                </p>
-
-                <h3>Family Legacy Calendar</h3>
-
-                <img
-                  src="/project-images/family-legacy-calendar.png"
-                  alt="Family Legacy Calendar"
-                  className="project-image"
-                />
-
-                <p className="project-description">
-                  Full-stack family calendar application for preserving
-                  birthdays, events, and monthly photo memories with secure
-                  user accounts, automatic photo collages, and persistent
-                  cloud storage.
-                </p>
-
-                <div className="project-features">
-                  <span>Secure User Authentication</span>
-                  <span>100-Year Calendar</span>
-                  <span>Birthdays & Family Events</span>
-                  <span>Monthly Photo Memories</span>
-                  <span>Automatic Photo Collages</span>
-                  <span>Persistent Photo Storage</span>
-                </div>
-
-                <div className="tech-stack">
-                  <span>React</span>
-                  <span>TypeScript</span>
-                  <span>Python</span>
-                  <span>FastAPI</span>
-                  <span>PostgreSQL</span>
-                  <span>SQLAlchemy</span>
-                  <span>JWT</span>
-                  <span>Render</span>
-                </div>
-
-                <div className="project-buttons">
-                  <a
-                    href="https://family-legacy-calendar-frontend.onrender.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="primary-button"
-                  >
-                    Live Demo
-                  </a>
-
-                  <a
-                    href="https://github.com/KevinJ3259/family-legacy-calendar"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="secondary-button"
-                  >
-                    View Code
-                  </a>
-                </div>
-              </div>
-            </article>
-            {/* INVENTORYPRO */}
-<article className="project-card">
-  <div className="project-number">05</div>
-
-  <div className="project-content">
-    <p className="project-type">
-      JAVA / FULL-STACK INVENTORY APPLICATION
+<section id="projects" className="section projects-section">
+  <div className="section-heading projects-heading">
+    <p className="section-label">FEATURED PROJECTS</p>
+    <h2>Applications I've built and deployed.</h2>
+    <p className="projects-intro">
+      A collection of full-stack applications showcasing my experience with
+      Java, Spring Boot, React, TypeScript, Python, PostgreSQL, APIs, AI, and
+      cloud deployment.
     </p>
-
-    <h3>InventoryPro</h3>
-
-    <img
-      src="/project-images/inventorypro.png"
-      alt="InventoryPro inventory and order management dashboard"
-      className="project-image"
-    />
-
-    <p className="project-description">
-      Full-stack inventory and order management system for managing products,
-      customers, orders, stock levels, reorder alerts, and business reporting
-      through a secure authenticated dashboard.
-    </p>
-
-    <div className="project-features">
-      <span>JWT Authentication</span>
-      <span>Product & Customer Management</span>
-      <span>Order Management</span>
-      <span>Automatic Inventory Updates</span>
-      <span>Reorder Alerts</span>
-      <span>Sales Reporting</span>
-      <span>Database Analytics</span>
-    </div>
-
-    <div className="tech-stack">
-      <span>Java 21</span>
-      <span>Spring Boot</span>
-      <span>Spring Security</span>
-      <span>React</span>
-      <span>TypeScript</span>
-      <span>PostgreSQL</span>
-      <span>Spring Data JPA</span>
-      <span>Hibernate</span>
-      <span>JWT</span>
-      <span>Render</span>
-      <span>Neon</span>
-    </div>
-
-    <div className="project-buttons">
-      <a
-        href="https://inventory-order-management-1-z7kr.onrender.com"
-        target="_blank"
-        rel="noreferrer"
-        className="primary-button"
-      >
-        Live Demo
-      </a>
-
-      <a
-        href="https://github.com/KevinJ3259/inventory-order-management"
-        target="_blank"
-        rel="noreferrer"
-        className="secondary-button"
-      >
-        View Code
-      </a>
-    </div>
   </div>
-</article>
-          </div>
-        </section>
+
+  <div className="projects-grid compact-projects-grid">
+
+    {/* INVENTORYPRO */}
+    <article className="compact-project-card">
+      <img
+        src="/project-images/inventorypro.png"
+        alt="InventoryPro inventory and order management dashboard"
+        className="compact-project-image"
+      />
+
+      <div className="compact-project-body">
+        <p className="compact-project-type">JAVA / FULL-STACK</p>
+        <h3>InventoryPro</h3>
+
+        <p className="compact-project-description">
+          Secure inventory and order management system with products,
+          customers, orders, reorder alerts, reporting, and database analytics.
+        </p>
+
+        <div className="compact-tech-stack">
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>React</span>
+          <span>PostgreSQL</span>
+        </div>
+
+        <div className="compact-project-buttons">
+          <a
+            href="https://inventory-order-management-1-z7kr.onrender.com"
+            target="_blank"
+            rel="noreferrer"
+            className="primary-button"
+          >
+            Live Demo
+          </a>
+
+          <a
+            href="https://github.com/KevinJ3259/inventory-order-management"
+            target="_blank"
+            rel="noreferrer"
+            className="secondary-button"
+          >
+            View Code
+          </a>
+        </div>
+      </div>
+    </article>
+
+    {/* FINSIGHT AI */}
+    <article className="compact-project-card">
+      <img
+        src="/project-images/finsight-ai.png"
+        alt="FinSight AI personal finance dashboard"
+        className="compact-project-image"
+      />
+
+      <div className="compact-project-body">
+        <p className="compact-project-type">AI / FULL-STACK</p>
+        <h3>FinSight AI</h3>
+
+        <p className="compact-project-description">
+          AI-powered personal finance platform for transactions, budgets,
+          savings goals, forecasting, and personalized financial insights.
+        </p>
+
+        <div className="compact-tech-stack">
+          <span>Python</span>
+          <span>FastAPI</span>
+          <span>React</span>
+          <span>PostgreSQL</span>
+        </div>
+
+        <div className="compact-project-buttons">
+          <a
+            href="https://finsight-ai-0961.onrender.com"
+            target="_blank"
+            rel="noreferrer"
+            className="primary-button"
+          >
+            Live Demo
+          </a>
+
+          <a
+            href="https://github.com/KevinJ3259/finsight-ai"
+            target="_blank"
+            rel="noreferrer"
+            className="secondary-button"
+          >
+            View Code
+          </a>
+        </div>
+      </div>
+    </article>
+
+    {/* CAREERTRACK AI */}
+    <article className="compact-project-card">
+      <img
+        src="/project-images/careertrack-ai.png"
+        alt="CareerTrack AI dashboard"
+        className="compact-project-image"
+      />
+
+      <div className="compact-project-body">
+        <p className="compact-project-type">AI / FULL-STACK</p>
+        <h3>CareerTrack AI</h3>
+
+        <p className="compact-project-description">
+          AI-powered career platform for tracking applications and interviews,
+          analyzing resumes, and generating tailored cover letters.
+        </p>
+
+        <div className="compact-tech-stack">
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>Node.js</span>
+          <span>PostgreSQL</span>
+        </div>
+
+        <div className="compact-project-buttons">
+          <a
+            href="https://careertrack-ai-sigma.vercel.app"
+            target="_blank"
+            rel="noreferrer"
+            className="primary-button"
+          >
+            Live Demo
+          </a>
+
+          <a
+            href="https://github.com/KevinJ3259/careertrack-ai"
+            target="_blank"
+            rel="noreferrer"
+            className="secondary-button"
+          >
+            View Code
+          </a>
+        </div>
+      </div>
+    </article>
+
+    {/* FAMILY LEGACY CALENDAR */}
+    <article className="compact-project-card">
+      <img
+        src="/project-images/family-legacy-calendar.png"
+        alt="Family Legacy Calendar"
+        className="compact-project-image"
+      />
+
+      <div className="compact-project-body">
+        <p className="compact-project-type">FULL-STACK</p>
+        <h3>Family Legacy Calendar</h3>
+
+        <p className="compact-project-description">
+          Private family calendar for birthdays, events, family members, photo
+          memories, and automatic monthly collage layouts.
+        </p>
+
+        <div className="compact-tech-stack">
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>Python</span>
+          <span>PostgreSQL</span>
+        </div>
+
+        <div className="compact-project-buttons">
+          <a
+            href="https://family-legacy-calendar-frontend.onrender.com"
+            target="_blank"
+            rel="noreferrer"
+            className="primary-button"
+          >
+            Live Demo
+          </a>
+
+          <a
+            href="https://github.com/KevinJ3259/family-legacy-calendar"
+            target="_blank"
+            rel="noreferrer"
+            className="secondary-button"
+          >
+            View Code
+          </a>
+        </div>
+      </div>
+    </article>
+
+    {/* VEHICLE MAINTENANCE */}
+    <article className="compact-project-card">
+      <img
+        src="/project-images/vehicle-maintenance.png"
+        alt="Vehicle Maintenance Dashboard"
+        className="compact-project-image"
+      />
+
+      <div className="compact-project-body">
+        <p className="compact-project-type">FULL-STACK</p>
+        <h3>Vehicle Maintenance Dashboard</h3>
+
+        <p className="compact-project-description">
+          Vehicle maintenance and fuel tracking dashboard with service history,
+          reminders, MPG analysis, alerts, and ownership-cost reporting.
+        </p>
+
+        <div className="compact-tech-stack">
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>Node.js</span>
+          <span>PostgreSQL</span>
+        </div>
+
+        <div className="compact-project-buttons">
+          <a
+            href="https://vehicle-maintenance-app-frontend.onrender.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="primary-button"
+          >
+            Live Demo
+          </a>
+
+          <a
+            href="https://github.com/KevinJ3259/vehicle-maintenance-app"
+            target="_blank"
+            rel="noreferrer"
+            className="secondary-button"
+          >
+            View Code
+          </a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
 
         {/* ================= EXPERIENCE ================= */}
 <section id="experience" className="section">
