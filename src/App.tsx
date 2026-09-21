@@ -265,6 +265,53 @@ function App() {
       </div>
     </article>
 
+    {/* AI SAFETY EQUIPMENT DETECTION */}
+    <article className="compact-project-card">
+      <img
+        src="/project-images/ai-safety-equipment.png"
+        alt="AI Safety Equipment Detection System"
+        className="compact-project-image"
+      />
+
+      <div className="compact-project-body">
+        <p className="compact-project-type">AI / COMPUTER VISION</p>
+        <h3>AI Safety Equipment Detection</h3>
+
+        <p className="compact-project-description">
+          Computer vision application using a custom-trained YOLO11 model
+          to detect workplace safety equipment, including hard hats and
+          safety vests, with bounding boxes and confidence scores.
+        </p>
+
+        <div className="compact-tech-stack">
+          <span>Python</span>
+          <span>YOLO11</span>
+          <span>PyTorch</span>
+          <span>Streamlit</span>
+        </div>
+
+        <div className="compact-project-buttons">
+          <a
+            href="https://ai-safety-equipment-detection.streamlit.app"
+            target="_blank"
+            rel="noreferrer"
+            className="primary-button"
+          >
+            Live Demo
+          </a>
+
+          <a
+            href="https://github.com/KevinJ3259/ai-safety-equipment-detection"
+            target="_blank"
+            rel="noreferrer"
+            className="secondary-button"
+          >
+            View Code
+          </a>
+        </div>
+      </div>
+    </article>
+
     {/* CAREERTRACK AI */}
     <article className="compact-project-card">
       <img
