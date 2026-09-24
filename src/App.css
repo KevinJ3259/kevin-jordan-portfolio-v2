@@ -886,3 +886,137 @@ img {
     padding: 18px;
   }
 }
+
+/* =========================
+   PORTFOLIO PAGE TRANSITIONS
+========================= */
+
+.page-panel {
+  display: none;
+}
+
+.page-panel.page-active {
+  display: block;
+  animation: portfolioPageIn 0.48s ease both;
+}
+
+.hero.page-panel.page-active {
+  display: flex;
+}
+
+@keyframes portfolioPageIn {
+  from {
+    opacity: 0;
+    transform: translateX(34px) rotateY(-2deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) rotateY(0);
+  }
+}
+
+.logo-button,
+.nav-page-link {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.logo-button {
+  border: 0;
+}
+
+.nav-page-link {
+  padding: 8px 0;
+  border: 0;
+  background: transparent;
+  color: #cbd5e1;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nav-page-link:hover,
+.nav-page-link.active {
+  color: #60a5fa;
+}
+
+.nav-page-link.active {
+  border-bottom: 2px solid #60a5fa;
+}
+
+.page-controls {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 28px 24px 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.page-control-button {
+  min-width: 120px;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid #334155;
+  border-radius: 9px;
+  background: #0d192b;
+  color: #f8fafc;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.page-control-button:hover:not(:disabled) {
+  border-color: #60a5fa;
+  color: #60a5fa;
+  transform: translateY(-2px);
+}
+
+.page-control-button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.page-indicator {
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 760px) {
+  .nav-links {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    max-width: calc(100vw - 100px);
+    padding-bottom: 4px;
+  }
+
+  .nav-page-link {
+    flex: 0 0 auto;
+    font-size: 12px;
+  }
+
+  .page-controls {
+    padding: 22px 20px 34px;
+  }
+
+  .page-control-button {
+    min-width: 96px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-panel.page-active {
+    animation: none;
+  }
+}

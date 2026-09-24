@@ -1,29 +1,109 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
+  const pages = ["home", "about", "skills", "projects", "experience", "education", "resume", "contact"];
+
+  const getPageFromHash = () => {
+    const page = window.location.hash.replace("#", "");
+    return pages.includes(page) ? page : "home";
+  };
+
+  const [activePage, setActivePage] = useState(getPageFromHash);
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      setActivePage(getPageFromHash());
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+
+  const changePage = (page: string) => {
+    if (window.location.hash === `#${page}`) {
+      setActivePage(page);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
+    window.location.hash = page;
+  };
+
+  const currentIndex = pages.indexOf(activePage);
+  const previousPage = currentIndex > 0 ? pages[currentIndex - 1] : null;
+  const nextPage = currentIndex < pages.length - 1 ? pages[currentIndex + 1] : null;
+
   return (
     <div className="app">
       {/* ================= NAVIGATION ================= */}
       <header className="navbar">
         <div className="nav-container">
-          <a href="#home" className="logo">
+          <button type="button" className="logo logo-button" onClick={() => changePage("home")}>
             KJ
-          </a>
+          </button>
 
           <nav className="nav-links">
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#experience">Experience</a>
-  <a href="#resume">Resume</a>
-  <a href="#contact">Contact</a>
+  <button
+    type="button"
+    className={activePage === "about" ? "nav-page-link active" : "nav-page-link"}
+    onClick={() => changePage("about")}
+  >
+    About
+  </button>
+  <button
+    type="button"
+    className={activePage === "skills" ? "nav-page-link active" : "nav-page-link"}
+    onClick={() => changePage("skills")}
+  >
+    Skills
+  </button>
+  <button
+    type="button"
+    className={activePage === "projects" ? "nav-page-link active" : "nav-page-link"}
+    onClick={() => changePage("projects")}
+  >
+    Projects
+  </button>
+  <button
+    type="button"
+    className={activePage === "experience" ? "nav-page-link active" : "nav-page-link"}
+    onClick={() => changePage("experience")}
+  >
+    Experience
+  </button>
+  <button
+    type="button"
+    className={activePage === "education" ? "nav-page-link active" : "nav-page-link"}
+    onClick={() => changePage("education")}
+  >
+    Education
+  </button>
+  <button
+    type="button"
+    className={activePage === "resume" ? "nav-page-link active" : "nav-page-link"}
+    onClick={() => changePage("resume")}
+  >
+    Resume
+  </button>
+  <button
+    type="button"
+    className={activePage === "contact" ? "nav-page-link active" : "nav-page-link"}
+    onClick={() => changePage("contact")}
+  >
+    Contact
+  </button>
 </nav>
         </div>
       </header>
 
       <main>
         {/* ================= HERO ================= */}
-        <section id="home" className="hero">
+        <section id="home" className={activePage === "home" ? "hero page-panel page-active" : "hero page-panel"}>
           <div className="hero-content">
             <p className="eyebrow">FULL-STACK SOFTWARE DEVELOPER</p>
 
@@ -42,9 +122,9 @@ function App() {
             </p>
 
             <div className="hero-buttons">
-              <a href="#projects" className="primary-button">
+              <button type="button" className="primary-button" onClick={() => changePage("projects")}>
                 View My Projects
-              </a>
+              </button>
 
               <a
                 href="https://github.com/KevinJ3259"
@@ -68,7 +148,7 @@ function App() {
         </section>
 
         {/* ================= ABOUT ================= */}
-        <section id="about" className="section">
+        <section id="about" className={activePage === "about" ? "section page-panel page-active" : "section page-panel"}>
           <div className="section-heading">
             <p className="section-label">ABOUT ME</p>
             <h2>Developer focused on building practical applications.</h2>
@@ -98,7 +178,7 @@ function App() {
         </section>
 
         {/* ================= SKILLS ================= */}
-        <section id="skills" className="section">
+        <section id="skills" className={activePage === "skills" ? "section page-panel page-active" : "section page-panel"}>
           <div className="section-heading">
             <p className="section-label">TECHNICAL SKILLS</p>
             <h2>Technologies I use to build applications.</h2>
@@ -160,7 +240,7 @@ function App() {
         </section>
 
         {/* ================= PROJECTS ================= */}
-<section id="projects" className="section projects-section">
+<section id="projects" className={activePage === "projects" ? "section projects-section page-panel page-active" : "section projects-section page-panel"}>
   <div className="section-heading projects-heading">
     <p className="section-label">FEATURED PROJECTS</p>
     <h2>Applications I've built and deployed.</h2>
@@ -454,31 +534,37 @@ function App() {
 </section>
 
         {/* ================= EXPERIENCE ================= */}
-<section id="experience" className="section">
+<section id="experience" className={activePage === "experience" ? "section page-panel page-active" : "section page-panel"}>
   <div className="section-heading">
-    <p className="section-label">EXPERIENCE & EDUCATION</p>
-    <h2>Technical experience backed by hands-on development.</h2>
+    <p className="section-label">PROFESSIONAL EXPERIENCE</p>
+    <h2>Professional experience in technology, customer service, and sales.</h2>
   </div>
 
   <div className="experience-list">
     <div className="experience-card">
       <p className="experience-type">PROFESSIONAL EXPERIENCE</p>
 
-      <h3>AT&T — Installation Technician</h3>
-      <h4>Technical Troubleshooting • Networking • Fiber</h4>
+      <h3>Race Communications — Outside Sales Representative</h3>
+      <h4>Sales • Customer Engagement • Fiber Internet Solutions</h4>
+
+      <p className="experience-date">September 2026 – Present</p>
 
       <p>
-        Installed and supported fiber-optic internet, voice, Wi-Fi, structured
-        cabling, residential gateways, and networking equipment. Diagnosed and
-        resolved hardware, connectivity, and customer technology issues.
+        Represent Race Communications through direct customer outreach,
+        helping residential customers understand available fiber internet
+        and phone services. Assess customer needs, recommend appropriate
+        solutions, answer questions, address objections, and build strong
+        customer relationships while working toward individual and team
+        sales goals.
       </p>
     </div>
-
-    <div className="experience-card">
+<div className="experience-card">
       <p className="experience-type">PROFESSIONAL EXPERIENCE</p>
 
-      <h3>GEICO — Customer Service Representative</h3>
+      <h3>GEICO Insurance Agency — MOAT Coastal Service Representative IV</h3>
       <h4>Problem Solving • Customer Support • Process Accuracy</h4>
+
+      <p className="experience-date">April 2022 – June 2026</p>
 
       <p>
         Managed complex customer issues, analyzed account and policy concerns,
@@ -487,7 +573,36 @@ function App() {
       </p>
     </div>
 
-    <div className="experience-card">
+<div className="experience-card">
+      <p className="experience-type">PROFESSIONAL EXPERIENCE</p>
+
+      <h3>AT&T — Installation Technician</h3>
+      <h4>Technical Troubleshooting • Networking • Fiber</h4>
+
+      <p className="experience-date">July 2013 – April 2022</p>
+
+      <p>
+        Installed and supported fiber-optic internet, voice, Wi-Fi, structured
+        cabling, residential gateways, and networking equipment. Diagnosed and
+        resolved hardware, connectivity, and customer technology issues.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+        {/* ================= EDUCATION ================= */}
+        <section
+          id="education"
+          className={activePage === "education" ? "section page-panel page-active" : "section page-panel"}
+        >
+          <div className="section-heading">
+            <p className="section-label">EDUCATION & TRAINING</p>
+            <h2>Education and technical training.</h2>
+          </div>
+
+          <div className="experience-list">
+<div className="experience-card">
       <p className="experience-type">EDUCATION</p>
       <h3>Bachelor of Science — Information Technology</h3>
       <h4>Software Engineering</h4>
@@ -506,11 +621,11 @@ function App() {
       <h4>React • Node.js • Express • Databases • APIs</h4>
       <p>University of Kansas — 2022</p>
     </div>
-  </div>
-</section>
+          </div>
+        </section>
 
         {/* ================= RESUME ================= */}
-        <section id="resume" className="section resume-section">
+        <section id="resume" className={activePage === "resume" ? "section resume-section page-panel page-active" : "section resume-section page-panel"}>
           <div className="section-heading">
             <p className="section-label">RESUME</p>
             <h2>Professional background and qualifications.</h2>
@@ -535,7 +650,7 @@ function App() {
         </section>
 
         {/* ================= CONTACT ================= */}
-        <section id="contact" className="section contact-section">
+        <section id="contact" className={activePage === "contact" ? "section contact-section page-panel page-active" : "section contact-section page-panel"}>
           <div className="section-heading">
             <p className="section-label">CONTACT</p>
             <h2>Let's build something useful.</h2>
@@ -575,6 +690,30 @@ function App() {
             </a>
           </div>
         </section>
+
+        <div className="page-controls">
+          <button
+            type="button"
+            className="page-control-button"
+            onClick={() => previousPage && changePage(previousPage)}
+            disabled={!previousPage}
+          >
+            ← Previous
+          </button>
+
+          <span className="page-indicator">
+            {currentIndex + 1} / {pages.length}
+          </span>
+
+          <button
+            type="button"
+            className="page-control-button"
+            onClick={() => nextPage && changePage(nextPage)}
+            disabled={!nextPage}
+          >
+            Next →
+          </button>
+        </div>
       </main>
 
       {/* ================= FOOTER ================= */}
