@@ -1020,3 +1020,33 @@ img {
     animation: none;
   }
 }
+
+/* Improve spacing between technical skills */
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.skill-list span {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #172b46;
+  border: 1px solid #2b4565;
+  border-radius: 8px;
+  color: #e2e8f0;
+  font-size: 13px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.skill-card {
+  padding: 24px;
+}
+
+.skill-card h3 {
+  margin-bottom: 12px;
+}

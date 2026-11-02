@@ -177,67 +177,79 @@ function App() {
           </div>
         </section>
 
-        {/* ================= SKILLS ================= */}
-        <section id="skills" className={activePage === "skills" ? "section page-panel page-active" : "section page-panel"}>
-          <div className="section-heading">
-            <p className="section-label">TECHNICAL SKILLS</p>
-            <h2>Technologies I use to build applications.</h2>
-          </div>
+        
+{/* ================= SKILLS ================= */}
+<section
+  id="skills"
+  className={
+    activePage === "skills"
+      ? "section page-panel page-active"
+      : "section page-panel"
+  }
+>
+  <div className="section-heading">
+    <p className="section-label">TECHNICAL SKILLS</p>
+    <h2>Technologies I use to build applications.</h2>
+  </div>
 
-          <div className="skills-grid">
-            <div className="skill-card">
-              <h3>Frontend</h3>
-              <div className="skill-list">
-                <span>React</span>
-                <span>TypeScript</span>
-                <span>JavaScript</span>
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>Responsive Design</span>
-              </div>
-            </div>
+  <div className="skills-grid">
+    <div className="skill-card">
+      <h3>Frontend</h3>
+      <div className="skill-list">
+        <span>React</span>
+        <span>TypeScript</span>
+        <span>JavaScript</span>
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>Responsive Design</span>
+      </div>
+    </div>
 
-            <div className="skill-card">
-              <h3>Backend</h3>
-              <div className="skill-list">
-                <span>Java</span>
-                <span>Spring Boot</span>
-                <span>Spring Security</span>
-                <span>Python</span>
-                <span>FastAPI</span>
-                <span>Node.js</span>
-                <span>Express</span>
-                <span>REST APIs</span>
-                <span>Authentication</span>
-                <span>API Integration</span>
-              </div>
-            </div>
+    <div className="skill-card">
+      <h3>Backend</h3>
+      <div className="skill-list">
+        <span>C#</span>
+        <span>ASP.NET Core Web API</span>
+        <span>Entity Framework Core</span>
+        <span>Java</span>
+        <span>Spring Boot</span>
+        <span>Spring Security</span>
+        <span>Python</span>
+        <span>FastAPI</span>
+        <span>Node.js</span>
+        <span>Express</span>
+        <span>REST APIs</span>
+        <span>Authentication</span>
+        <span>API Integration</span>
+      </div>
+    </div>
 
-            <div className="skill-card">
-              <h3>Database</h3>
-              <div className="skill-list">
-                <span>PostgreSQL</span>
-                <span>SQLAlchemy</span>
-                <span>Prisma ORM</span>
-                <span>SQL</span>
-                <span>Database Design</span>
-                <span>Neon</span>
-              </div>
-            </div>
+    <div className="skill-card">
+      <h3>Database</h3>
+      <div className="skill-list">
+        <span>PostgreSQL</span>
+        <span>SQLAlchemy</span>
+        <span>Prisma ORM</span>
+        <span>SQL</span>
+        <span>Database Design</span>
+        <span>Neon</span>
+      </div>
+    </div>
 
-            <div className="skill-card">
-              <h3>Tools & Deployment</h3>
-              <div className="skill-list">
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>VS Code</span>
-                <span>Render</span>
-                <span>Vercel</span>
-                <span>OpenAI API</span>
-              </div>
-            </div>
-          </div>
-        </section>
+    <div className="skill-card">
+      <h3>Tools & Deployment</h3>
+      <div className="skill-list">
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>VS Code</span>
+        <span>Render</span>
+        <span>Vercel</span>
+        <span>OpenAI API</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         {/* ================= PROJECTS ================= */}
 <section id="projects" className={activePage === "projects" ? "section projects-section page-panel page-active" : "section projects-section page-panel"}>
@@ -252,6 +264,58 @@ function App() {
   </div>
 
   <div className="projects-grid compact-projects-grid">
+
+  
+{/** CLOUDOPS SERVICE PLATFORM */}
+<article className="compact-project-card">
+  <img
+    src="/project-images/cloudops-service-platform.png"
+    alt="CloudOps Service Platform incident management dashboard"
+    className="compact-project-image"
+  />
+
+  <div className="compact-project-body">
+    <p className="compact-project-type">
+      C# / .NET / FULL-STACK
+    </p>
+
+    <h3>CloudOps Service Platform v1.0</h3>
+
+    <p className="compact-project-description">
+      Full-stack IT service management platform featuring incident
+      tracking, SLA monitoring, recurring incident detection,
+      problem management, knowledge base, and operational analytics.
+    </p>
+
+    <div className="compact-tech-stack">
+      <span>React</span>
+      <span>TypeScript</span>
+      <span>C# / ASP.NET Core</span>
+      <span>PostgreSQL</span>
+    </div>
+
+    <div className="compact-project-buttons">
+      <a
+        href="https://cloudops-frontend-3jpr.onrender.com"
+        target="_blank"
+        rel="noreferrer"
+        className="primary-button"
+      >
+        Live Demo
+      </a>
+
+      <a
+        href="https://github.com/KevinJ3259/cloudops-service-platform"
+        target="_blank"
+        rel="noreferrer"
+        className="secondary-button"
+      >
+        View Code
+      </a>
+    </div>
+  </div>
+</article>
+  
 
     {/* INVENTORYPRO */}
     <article className="compact-project-card">
