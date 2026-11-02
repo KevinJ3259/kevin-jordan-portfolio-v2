@@ -810,9 +810,11 @@ img {
 
 .compact-project-image {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-bottom: 1px solid #24344a;
+  height: 315px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  background-color: #081426;
 }
 
 .compact-project-body {
